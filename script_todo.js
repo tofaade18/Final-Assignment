@@ -80,6 +80,10 @@ function deleteTodo(id){
     displayTodo();
 }
 
+function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+}
+
 // let value = {
 //     namee: "Hahaa",
 //     age: 22
