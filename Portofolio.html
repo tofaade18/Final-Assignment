@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-color: whitesmoke;">
+    <div class="container-fluid">
+        <div class="row bg-light shadow">
+            <div class="col-12">
+                <nav class="">
+                    <div class="d-flex justify-content-end pb-3 pt-3" style="margin-right: 5px;">
+                        <div><a style="text-decoration: none; color: black; margin-left: 10px; margin-right: 10px; font-size: smaller;" href="/html/">HOME</a></div>
+                        <div><a style="text-decoration: none; color: black; margin-left: 10px; margin-right: 10px; font-size: smaller;" href="/css/">PRODUCT</a></div>
+                        <div><a style="text-decoration: none; color: black; margin-left: 10px; margin-right: 10px; font-size: smaller;" href="/js/">GALLERY</a></div>
+                        <div><a style="text-decoration: none; color: black; margin-left: 10px; margin-right: 10px; font-size: smaller;" href="/python/">BLOG</a></div>
+                        <div><a style="text-decoration: none; color: black; margin-left: 10px; margin-right: 10px; font-size: smaller;" href="/go/">MY INVENTORY</a></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 shadow" style="background-color: white;">
+        <div class="row bg-light py-3">
+            <div class="col-md-2">
+
+                <img style="width: 160px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png" alt="foto">
+            </div>
+            <div class="col-md-4" style="margin-top: 10px;">
+                <h3 id="namagua"><strong>Tofa Ade Nugraha</strong></h3>
+                <p id="rolegua" style="font-weight: normal; margin-bottom: 12px;">Front End Designer</p>
+                <button class = "btn btn-primary btn-lg"> Kontak </button>
+                <button class = "btn btn-outline-secondary btn-lg"> Resume </button>
+            </div>
+            <div class="col-md-2" style="margin-top: 20px;">
+                <p id = "av" style="margin-bottom: 3px;"> Availability</p>
+                <p id = "age" style="margin-bottom: 3px;"> Usia</p>
+                <p id = "loc" style="margin-bottom: 3px;"> Lokasi</p>
+                <p id = "exp" style="margin-bottom: 3px;"> Pengalaman</p>
+                <p id = "mail" style="margin-bottom: 3px;"> Email</p>
+            </div>
+            <div class="col-md-4" style="margin-top: 20px;">
+                <p id = "ft" style="margin-bottom: 3px;"> Full Time</p>
+                <p id = "ag" style="margin-bottom: 3px;"> 19</p>
+                <p id = "jkt" style="margin-bottom: 3px;"> Jakarta, Indonesia</p>
+                <p id = "xp" style="margin-bottom: 3px;"> 1</p>
+                <p id = "gm" style="margin-bottom: 3px;"> nugrahatofa@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- <nav class="navbar">
+        <a href="/html/">HOME</a>
+        <a href="/css/">PRODUCT</a>
+        <a href="/js/">GALLERY</a>
+        <a href="/python/">BLOG</a>
+        <a href="/go/">MY INVENTORY</a>
+        </ul>
+    </nav>
+    <br>
+    <div id = "judul">
+        <div id = "foto">
+        <img src="C:\Users\USER\Downloads\download.png" alt="foto">
+        </div>    
+        <div><h1><strong>Nama Anda</strong></h1>
+        <h3 style="font-weight: normal;">
+            Front End Designer <br>
+        <button class = "kontak"> Kontak </button>
+        <button class = "resume"> Resume </button>
+        </div>
+        <div>
+        <p class = "availl">Availability FullTime</p>
+        <p class = "usia"> Usia 19</p>
+        <p class = "lokasi">Lokasi Jakarta</p>
+        <p class= "exp">Pengalaman 2</p>
+        <p class= "email">Email nugrahatofa@gmail.com</p>
+        </div> -->
+    <div class="container mt-4 shadow">
+        <div class="row bg-light py-3" id = containerfr>
+            <div class="col" style="padding: 0;">
+                <form class="form" id="input-form" onsubmit="profile();">
+                    <label for="name">Nama:</label>
+                    <input type="text" placeholder="Masukkan nama anda" name="name" id="name" required>
+                    <label for="role">Role:</label>
+                    <input type="text" name="role" id="role" required>
+                    <label for="avail">Availability:</label>
+                    <input type="text" name="avail" id="avail" required>
+                    <label for="Usia">Usia:</label>
+                    <input type="number" name="Usia" id="Usia" required>
+                    <label for="thn">Years Experience:</label>
+                    <input type="number" name="thn" id="thn" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required><br>
+                    <button class = "btn btn-success" id="submitt" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <form action="" class = "form">
+        <label for="name">Nama:</label>
+        <input type="text" name="name" id="name">
+        <label for="role">Role:</label>
+        <input type="text" name="role" id="role">
+        <label for="avail">Availability:</label>
+        <input type="text" name="avail" id="avail">
+        <label for="Usia">Usia:</label>
+        <input type="text" name="Usia" id="Usia">
+        <label for="thn">Years Experience:</label>
+        <input type="text" name="thn" id="thn">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email"><br><br>
+        <input class = "submit" type="submit" value="Submit">
+    </form> -->
+    <script src="indexpf.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
